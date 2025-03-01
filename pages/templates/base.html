@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        <link rel="stylesheet" href="{% static 'css/section.css' %}">
+        <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+        <link rel="stylesheet" href="{% static 'css/header.css' %}">
+        <title>Document</title>
+</head>
+<body>
+<header class="center-row">
+    <nav>
+        <input type="checkbox" id="nav-check">
+        <div class="nav-btn">
+            <label for="nav-check" class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+        </div>
+        <div class="nav-link center-row">
+            <a href="{% url 'about' %}">About Me</a>
+            <a href="{% url 'project_list' %}">Projects</a>
+            <a href="#">Experience</a>
+            <a href="{% url 'contact' %}">Contact</a>
+        </div>
+    </nav>
+</header>
+
+<div class="main-container">
+    {% block content %}
+    {% endblock content %}
+</div>
+
+</body>
+</html>

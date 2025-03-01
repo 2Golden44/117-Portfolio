@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="about-section center-row">
+
+    <!-- About Section -->
+    <div class="about-image-container center-row">
+        <img src="{% static 'img/IMG_3843.jpg' %}" alt="David Golden" style="width: 250px; height: 300px; border-radius: 50%;">
+        </div>
+
+        <div class="class=contact">
+            <img src="{% static 'img/linkedin.png' %}" alt="LinkedIn" style="width: 20px;" onclick="window.open('https://www.linkedin.com/in/davidgolden')">
+            <img src="{% static 'img/github logo.png' %}" alt="GitHub" style="width: 20px;" onclick="window.open('https://www.github.com/2Golden44')">
+            <img src="{% static 'img/baseline-email.png' %}" alt="Email" style="width: 20px;" onclick="window.open('mailto:Bgreat0306@gmail.com')">
+        </div>
+
+      <div class="about-section center-column" id="about">
+        <div class="about-description-container center-column">
+        <h1>HI! MY NAME IS DAVID GOLDEN</h1>
+        <h2>Junior Software Engineer</h2>
+        <p>I’m David Golden, a Junior Software Engineer passionate about coding and eager to grow in the tech industry. While I’m early in my career, I’ve gained hands-on experience through personal projects, coding bootcamps, and self-driven learning. I’m always excited to solve problems, build intuitive applications, and expand my knowledge in software development. I specialize in web technologies like HTML, CSS, JavaScript, Python, and have started exploring frameworks like React. My enthusiasm for learning keeps me constantly exploring new languages and tools, and I’m particularly interested in full-stack development. I’m excited to contribute to collaborative teams and continuously improve my coding skills through real-world experience.</p>
+    </div>
+</div>
+</section>
+<section class="skills-section center-column">
+    <h2>Skills / Languages</h2>
+    <div class="skills-list">
+        <label class="text-label">HTML</label>
+        <label class="text-label">CSS</label>
+        <label class="text-label">JavaScript</label>
+        <label class="text-label">Python</label>
+        <label class="text-label">React</label>
+        <label class="text-label">Flask</label>
+        <label class="text-label">Agile/SCRUM</label>
+        <label class="text-label">SQLite</label>
+        <label class="text-label">Git & GitHUB</label>
+        <label class="text-label">Node.Js</label>
+    </div>
+</section>
+{% endblock content %}
+
